@@ -1,7 +1,7 @@
 # Programacao-s1
 Ponderada da semana 01, módulo 05.
 
-## Objetivo
+## Objetivos
 
 - Criar uma aplicação com react.js;
 - Buscar um CEP e obter por meio de uma api as suas informações;
