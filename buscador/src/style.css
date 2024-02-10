@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.container{
+  height: 100vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#01242E, #02394A);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  animation: flipTitle 2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes flipTitle {
+  from{
+      transform: rotateX(90deg);
+  }
+  to{
+      transform: rotateX(0deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerInput{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  box-shadow: 0 0 0.2rem 0 rgba(255, 255, 255, 0.5);
+  margin: 2rem;
+  gap: 0.5rem;
+}
+
+.containerInput input{
+  border: 0;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.containerInput input::placeholder{
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonSearch{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.5s;
+}
+
+.buttonSearch:hover{
+   transform: scale(1.4);
+}
+
+.main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: white;
+   width: 80%;
+   border-radius: 0.4rem;
+}
+
+.main h2{
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.main span{
+  margin-bottom: auto;
+  font-weight: bold;
 }
